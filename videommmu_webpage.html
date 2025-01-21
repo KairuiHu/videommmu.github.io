@@ -1,0 +1,1041 @@
+
+<!doctype html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./Plug-and-Play Diffusion Features for Text-Driven Image-to-Image Translation_files/chalkduster" rel="stylesheet">
+<!-- <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>"> -->
+<style>
+	@import url('https://fonts.cdnfonts.com/css/chalkduster');
+</style>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="google-site-verification" content="eGDOZ_6azobM9Vcl7r072IFo1FJ-TfNvGkmz6YbLCLo" />
+
+	<!-- Bootstrap CSS -->
+	<link href="./html_pages/resources/bootstrap.min.css" rel="stylesheet">
+	<link href="./html_pages/resources/stylesheet.css" rel="stylesheet">
+	<script src="js/jquery-2.1.3.min.js"> </script>
+
+	<title>Video-MMMU</title>
+</head>
+	
+<body data-new-gr-c-s-check-loaded="14.1110.0" data-gr-ext-installed="">
+	<header>
+		<nav>
+			<a class="h5 pt-1" style="margin-left: 10px; color: #fff !important;" href="#Video-MMMU">Video-MMMU</a>
+		</nav>
+		<nav>
+			<!-- Dropdown Menu -->
+			<div class="dropdown">
+				<a href="#Leaderboard">Leaderboard</a>
+				<a href="#Examples">VideoMMMU Examples</a>
+				<div class="dropdown-content">
+					<a href="#Art">Art</a>
+					<a href="#Business">Business</a>
+					<a href="#Humanities">Humanities</a>
+					<a href="#Science">Science</a>
+					<a href="#Medicine">Medicine</a>
+					<a href="#Engineering">Engineering</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	
+
+	<section class="jumbotron text-center pb-2" id="Video-MMMU">
+		<div class="container">
+			<br><br><br>
+			<!-- Title with Icon -->
+			<h1 class="jumbotron-heading" style="font-size: 5.5rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+				<img src="./assets/figures/pyramid-chart.png" alt="Video-MMMU Icon" style="height: 5.5rem; width: auto;">
+				Video-MMMU
+			</h1>
+			<!-- Subtitle -->
+			<h5 class="pt-1" style="font-size: 2rem; font-weight: normal">
+				Evaluating Knowledge Acquisition from Multi-Discipline Professional Videos
+			</h5>
+			<br><br>
+			<!-- Paper Link -->
+			<a style="font-size: 1.2rem; color: white !important;">Paper under review</a>
+			<br><br>
+			<br><br><br>
+		</div>
+	</section>
+	
+
+	<div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: -65px;">
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Business_Economics_1.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Business</span><br>
+					<span class="subtitle">Economics</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Business_Finance_2.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Business</span><br>
+					<span class="subtitle">Finance</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Business_Manage_3.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Business</span><br>
+					<span class="subtitle">Manage</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Business_Economics_4.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Business</span><br>
+					<span class="subtitle">Economics</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Engineering_Architecture_Engineering_5.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Engineering</span><br>
+					<span class="subtitle">Architecture</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Engineering_energy_6.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Engineering</span><br>
+					<span class="subtitle">Energy</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Engineering_electronics_8.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Engineering</span><br>
+					<span class="subtitle">Electronics</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Engineering_Computer_Science_1.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Engineering</span><br>
+					<span class="subtitle">Computer Science</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Art_Arthistory_13.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Art</span><br>
+					<span class="subtitle">Art Theory</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Art_Arttheory_14.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Art</span><br>
+					<span class="subtitle">Art Theory</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Humanities_psychology_15.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Humanities</span><br>
+					<span class="subtitle">Psychology</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Humainities_history_16.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Humanities</span><br>
+					<span class="subtitle">History</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Science_Physics_11.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Science</span><br>
+					<span class="subtitle">Physics</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Science_Chemistry_10.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Science</span><br>
+					<span class="subtitle">Chemistry</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/test_Clinical_medicine_173.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Medicine</span><br>
+					<span class="subtitle">Clinical Medicine</span>
+				</p>
+			</div>
+		</div>
+		<div class="video-teaser-container">
+			<video playsinline autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" class="video-teaser" src="./assets/samples/Medicine_public_health_12.mp4"></video>
+			<div class="hover-overlay">
+				<p class="text-container">
+					<span class="title">Medicine</span><br>
+					<span class="subtitle">Public Health</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<section id="Abstract">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Abstract</h1>
+			<br>
+			<p class="description text-left">
+				Humans acquire knowledge through three cognitive stages: perceiving information, comprehending knowledge, and adapting knowledge to solve novel problems. Videos serve as an effective medium for this learning process, facilitating a progression through these cognitive stages. However, existing video benchmarks fail to systematically evaluate the <i>knowledge acquisition</i> capabilities in Large Multimodal Models (LMMs). To address this gap, we introduce <strong>Video-MMMU</strong>, a multi-modal, multi-disciplinary benchmark designed to assess LMMs' ability to acquire and utilize knowledge from videos. Video-MMMU features a curated collection of 300 expert-level videos and 900 human-annotated questions across six disciplines, evaluating <i>knowledge acquisition</i> through stage-aligned question-answer pairs: Perception, Comprehension, and Adaptation. A proposed knowledge gain metric, &Delta;<sub>knowledge</sub>, quantifies improvement in performance after video viewing. Evaluation of LMMs reveals a steep decline in performance as cognitive demands increase and highlights a significant gap between human and model knowledge acquisition, underscoring the need for methods to enhance LMMs' capability to learn and adapt from videos.
+			</p>
+			<br>
+			<div class="image-viewer" style="margin-top: 20px; text-align: center;">
+				<img src="./assets/figures/figure_1.png" alt="Example PDF as Image" style="width: 80%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			</div>
+		</div>
+	</section>
+
+	<section id="Overview">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Overview</h1>
+			<br>
+			<p class="description text-left">
+				We introduce <strong>Video-MMMU</strong>, a massive, multi-modal, multi-disciplinary video benchmark that evaluates the knowledge acquisition capability from educational videos through three main features:
+			</p>
+			<p class="description text-left">
+				<strong>1) Knowledge-intensive Video Collection:</strong><br>
+				Our dataset comprises 300 expert-level videos spanning 6 professional disciplines: Art, Business, Science, Medicine, Humanities, and Engineering, with 30 subjects distributed among them.
+			</p>
+			<p class="description text-left">
+				<strong>2) Knowledge Acquisition-based Question Design:</strong><br>
+				Each video includes three question-answer pairs aligned with the three knowledge acquisition stages: Perception (identifying key information related to the knowledge), Comprehension (understanding the underlying concepts), and Adaptation (applying knowledge to new scenarios).
+			</p>
+			<p class="description text-left">
+				<strong>3) Quantitative Knowledge Acquisition Assessment:</strong><br>
+				We propose a knowledge acquisition metric, denoted as <i>&Delta;<sub>knowledge</sub></i>, to measure performance gains on practice exam questions after learning from videos. This metric enables us to quantitatively evaluate how effectively large multimodal models (LMMs) can assimilate and utilize the information presented in the videos to solve real-world, novel problems.
+			</p>
+			<br>
+			<div class="image-viewer" style="margin-top: 20px; text-align: center;">
+				<img src="./assets/figures/figure_2.png" 
+					alt="Figure 2" 
+					style="width: 80%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			</div>
+			<p class="description text-left">
+				<br>
+				<strong>Key Insights:</strong>
+			</p>
+			<div class="insights" style="margin-top: 10px;">
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>1) Progressive Performance Decline:</strong><br>
+						Model performance decreases as cognitive demands increase. While models perform relatively better on perception tasks, their accuracy drops notably on comprehension tasks and declines further on adaptation tasks.
+					</li>
+					<li style="margin-top: 15px;">
+						<strong>2) Knowledge Acquisition from Videos is Challenging:</strong><br>
+						The knowledge acquisition metric <i>&Delta;<sub>knowledge</sub></i> reveals a significant gap between human and model performance. While humans achieve substantial improvement (<i>&Delta;<sub>knowledge</sub></i> = 33.1%) after watching the videos, even the top-performing models show smaller knowledge gains (<i>GPT-4o</i>: <i>&Delta;<sub>knowledge</sub></i> = 15.6%, <i>Claude-3.5-Sonnet</i>: <i>&Delta;<sub>knowledge</sub></i> = 11.4%).
+					</li>
+				</ul>
+				<p style="margin-top: 15px;">
+					This limitation underscores a potential challenge in current LMMs. While humans naturally acquire knowledge through video-based learning, having developed this capability through classroom learning and educational experiences throughout life, LMMs struggle to effectively learn from videos. These findings emphasize the need for further research to enhance how LMMs acquire and utilize video-based information, bringing them closer to human-level learning processes.
+				</p>
+			</div>
+			
+		
+	</section>
+
+	<section id="Statistics">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Statistics</h1>
+			<!-- <div style="margin-top: 15px;">
+				<h3><strong>Perception Questions</strong></h3>
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>1) Optical Character Recognition (OCR):</strong> Questions that require extracting visual information, including formulas, data, charts, and handwritten content.
+					</li>
+					<li>
+						<strong>2) Automatic Speech Recognition (ASR):</strong> Questions that assess accurate transcription of spoken content.
+					</li>
+				</ul>
+			</div>
+			<div style="margin-top: 20px;">
+				<h3><strong>Comprehension Questions</strong></h3>
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>1) Concept Comprehension (CC):</strong> Questions that test conceptual understanding using multiple-answer multiple-choice (MAMC) format, presenting 4-10 statements with multiple possible correct answers.
+					</li>
+					<li>
+						<strong>2) Problem-solving Strategy Comprehension (PSC):</strong> Questions that assess understanding by presenting variants of video example questions with different values. These questions require applying the same reasoning process demonstrated in the video to new calculations.
+					</li>
+				</ul>
+			</div>
+			<div style="margin-top: 20px;">
+				<h3><strong>Adaptation Questions</strong></h3>
+				<ul style="line-height: 1.8;">
+					<li>
+						<strong>1) Case Study Analysis (CSA):</strong> Questions that test concept application to novel real-world scenarios.
+					</li>
+					<li>
+						<strong>2) Problem-solving Strategy Adaptation (PSA):</strong> Questions that assess the ability to modify learned solution methods for new problems by identifying key similarities and differences between examples and new scenarios.
+					</li>
+				</ul>
+			</div>
+			<p style="margin-top: 30px;">
+				We present 6 QA samples from Video-MMMU as follows:
+			</p> -->
+			<br>
+			<div class="image-viewer" style="margin-top: 20px; text-align: center;">
+				<img src="./assets/figures/figure_3.png" 
+					alt="Figure 3" 
+					style="width: 80%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			</div>    
+		</div>
+	</section>
+
+	<section id="Annotation Pipeline">
+		<hr class="mt-5">
+		<div class="container" style="margin-top: 30px">
+			<h1 class="text-center">Annotation Pipeline</h1>
+			<br>
+			<!-- Video Viewer -->
+			<div class="video-viewer" style="margin-top: 20px; text-align: center;">
+				<video controls autoplay muted="false" style="width: 80%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+					<source src="./assets/figures/pipeline_video.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+
+	<section id="Leaderboard">
+		<hr class="mt-5">
+		<div class="container text-center" style="margin-top: 30px">
+			<h1>Video-MMMU Leaderboard</h1>
+    <p class="description">We evaluate various open-source and proprietary LMMs. The table below provides a detailed comparison.</p>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color human"></div>
+            <span>Human Expert</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color opensource"></div>
+            <span>Open-Source</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color proprietary"></div>
+            <span>Proprietary</span>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Overall</th>
+                <th>Perception</th>
+                <th>Comprehension</th>
+                <th>Adaptation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="human-row">
+                <td>Human Expert</td>
+                <td>74.44</td>
+                <td>84.33</td>
+                <td>78.67</td>
+                <td>60.33</td>
+            </tr>
+            <tr class="proprietary-row">
+                <td>Claude-3.5-Sonnet</td>
+                <td>65.78</td>
+                <td>72.00</td>
+                <td>69.67</td>
+                <td>55.67</td>
+            </tr>
+            <tr class="proprietary-row">
+                <td>GPT-4o</td>
+                <td>61.22</td>
+                <td>66.00</td>
+                <td>62.00</td>
+                <td>55.67</td>
+            </tr>
+            <tr class="proprietary-row">
+                <td>Gemini 1.5 Pro</td>
+                <td>53.89</td>
+                <td>59.00</td>
+                <td>53.33</td>
+                <td>49.33</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>Aria</td>
+                <td>50.78</td>
+                <td>65.67</td>
+                <td>46.67</td>
+                <td>40.00</td>
+            </tr>
+            <tr class="proprietary-row">
+                <td>Gemini 1.5 Flash</td>
+                <td>49.78</td>
+                <td>57.33</td>
+                <td>49.00</td>
+                <td>43.00</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>LLaVA-Video-72B</td>
+                <td>49.67</td>
+                <td>59.67</td>
+                <td>46.00</td>
+                <td>43.33</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>LLaVA-OneVision-72B</td>
+                <td>48.33</td>
+                <td>59.67</td>
+                <td>42.33</td>
+                <td>43.00</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>MAmmoTH-VL-8B</td>
+                <td>41.78</td>
+                <td>51.67</td>
+                <td>40.00</td>
+                <td>33.67</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>InternVL2-8B</td>
+                <td>37.44</td>
+                <td>47.33</td>
+                <td>33.33</td>
+                <td>31.67</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>LLaVA-Video-7B</td>
+                <td>36.11</td>
+                <td>41.67</td>
+                <td>33.33</td>
+                <td>33.33</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>VILA1.5-40B</td>
+                <td>34.00</td>
+                <td>38.67</td>
+                <td>30.67</td>
+                <td>32.67</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>LLaVA-OneVision-7B</td>
+                <td>33.89</td>
+                <td>40.00</td>
+                <td>31.00</td>
+                <td>30.67</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>Llama-3.2-11B</td>
+                <td>30.00</td>
+                <td>35.67</td>
+                <td>32.33</td>
+                <td>22.00</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>LongVA-7B</td>
+                <td>23.98</td>
+                <td>24.00</td>
+                <td>24.33</td>
+                <td>23.67</td>
+            </tr>
+            <tr class="opensource-row">
+                <td>VILA1.5-8B</td>
+                <td>20.89</td>
+                <td>20.33</td>
+                <td>17.33</td>
+                <td>25.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+		</div>
+	</section>	
+
+	
+	<section id="Art">
+		<hr class="mt-5">
+
+		<div class="container text-center" style="margin-top: 30px">
+			<h1>Video-MMMU Examples</h1>
+			<br>
+			<br>
+			<!-- Section Title -->
+			<h2 class="section-title">Video-MMMU Examples - Art</h2>
+			<!-- YouTube Video -->
+			<div class="youtube-container" style="margin-top: 30px">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Enej5kRTpW4?si=2nsQajSKBBtM-FFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+	
+			<!-- Question Tracks -->
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Perception Track -->
+				<div class="track">
+					<div class="track-title perception">Perception Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Which of the following does NOT appear in the video frame when the video introduces Painting?</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Intense, warm colors</li>
+							<li>Strong contrasts of light and dark</li>
+							<li>Focus on movement, drama, and emotion</li>
+							<li>Abstraction</li>
+							<li>Allegory</li>
+							<li>Enhanced sense of movement</li>
+							<li>Deliberately set apart from Renaissance and Mannerism</li>
+							<li>Asymmetry</li>
+							<li>Renaissance</li>
+							<li>Mannerism</li>
+						</ol>
+						<p><strong>Ground truth: </strong>D. Abstraction</p>
+					</div>
+				</div>
+
+				<!-- Comprehension Track -->
+				<div class="track">
+					<div class="track-title comprehension">Comprehension Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Based on your understanding of the video, which of the following statements about Baroque painting is/are correct?</p>
+						<ul>
+							<li>Statement 1. Baroque paintings focused on calm, balanced scenes with even lighting.</li>
+							<li>Statement 2. Baroque artists used strong contrasts of light and dark to highlight key figures.</li>
+							<li>Statement 3. Baroque painting was known for symmetrical compositions and a sense of stability.</li>
+							<li>Statement 4. Baroque artists avoided using allegory in their works.</li>
+						</ul>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Statement 1 is correct</li>
+							<li>Statement 1 and 2 are correct</li>
+							<li>Statement 1, 2, and 3 are correct</li>
+							<li>Statement 1, 3, and 4 are correct</li>
+							<li>Statement 2 and 4 are correct</li>
+							<li>Statement 3 is correct</li>
+							<li>Statements 1 and 4 are correct</li>
+							<li>Statements 1, 3, and 4 are correct</li>
+							<li>Statement 2 is correct</li>
+							<li>All are correct</li>
+						</ol>
+						<p><strong>Ground truth: </strong>I. Statement 2 is correct</p>
+					</div>
+				</div>
+
+				<!-- Adaptation Track -->
+				<div class="track">
+					<div class="track-title adaptation">Adaptation Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> On the basis of style, this painting belongs to which of the following periods?</p>
+						<p>
+							<img src="./assets/samples/images_for_adaptation_track/new_Art_Theory_6.jpg" alt="Painting for Adaptation Question" style="max-width: 100%; height: auto; display: block; margin: 10px auto;" />
+						</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Rococo</li>
+							<li>Gothic</li>
+							<li>Renaissance</li>
+							<li>Baroque</li>
+							<li>Neoclassicism</li>
+							<li>Byzantine</li>
+							<li>Mannerism</li>
+							<li>Romanticism</li>
+							<li>Art Nouveau</li>
+							<li>Classical</li>
+						</ol>
+						<p><strong>Ground truth: </strong>I. Baroque</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <hr class="mt-5"> -->
+	
+	<section id="Business">
+		<hr class="mt-5">
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">Video-MMMU Examples - Business</h2>
+			<!-- YouTube Video -->
+			<div class="youtube-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ix03LGUQC7s?si=2eVRDUBESAGFeXfP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+	
+			<!-- Question Tracks -->
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Perception Track -->
+				<div class="track">
+					<div class="track-title perception">Perception Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> According to the video, a minimum price control for alcoholic drinks, the intention is to discourage consumption from Q1 to ____, due to the negative externalities, and the price is raised to ____ from the free market price of ____. Fill in the blanks based on the video content.</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>(Q*, Pmin, P1)</li>
+							<li>(Q*, P1, Pmin)</li>
+							<li>(Q1, Pmin, P2)</li>
+							<li>(Q2, P1, Pmin)</li>
+							<li>(Q*, P2, P1)</li>
+							<li>(Q1, P2, Pmin)</li>
+							<li>(Q2, Pmin, P1)</li>
+							<li>(Q*, Pmin, P2)</li>
+							<li>(Q2, P2, P1)</li>
+							<li>(Q1, P1, Pmin)</li>
+						</ol>
+						<p><strong>Ground truth: </strong>A. (Q*, Pmin, P1)</p>
+					</div>
+				</div>
+	
+				<!-- Comprehension Track -->
+				<div class="track">
+					<div class="track-title comprehension">Comprehension Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Based on your understanding, what is the correct sequence of consequences when a minimum price is imposed on a good with negative externalities in consumption?</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Free market equilibrium at P1 and Q1 → Minimum price imposed above P1 → Consumption contracts to Q* → Externality internalized.</li>
+							<li>Minimum price imposed above P1 → Free market equilibrium at P1 and Q1 → Consumption contracts to Q* → Externality internalized.</li>
+							<li>Free market equilibrium at P1 and Q1 → Consumption contracts to Q* → Minimum price imposed above P1 → Externality internalized.</li>
+							<li>Externality internalized → Free market equilibrium at P1 and Q1 → Minimum price imposed above P1 → Consumption contracts to Q*.</li>
+							<li>Minimum price imposed above P1 → Consumption contracts to Q* → Externality internalized → Free market equilibrium at P1 and Q1.</li>
+							<li>Consumption contracts to Q* → Minimum price imposed above P1 → Free market equilibrium at P1 and Q1 → Externality internalized.</li>
+							<li>Free market equilibrium at P1 and Q1 → Minimum price imposed above P1 → Externality internalized → Consumption contracts to Q*.</li>
+							<li>Minimum price imposed above P1 → Free market equilibrium at P1 and Q1 → Externality internalized → Consumption contracts to Q*.</li>
+							<li>Externality internalized → Minimum price imposed above P1 → Free market equilibrium at P1 and Q1 → Consumption contracts to Q*.</li>
+							<li>Consumption contracts to Q* → Externality internalized → Minimum price imposed above P1 → Free market equilibrium at P1 and Q1.</li>
+						</ol>
+						<p><strong>Ground truth: </strong>A. Free market equilibrium at P1 and Q1 → Minimum price imposed above P1 → Consumption contracts to Q* → Externality internalized.</p>
+					</div>
+				</div>
+	
+				<!-- Adaptation Track -->
+				<div class="track">
+					<div class="track-title adaptation">Adaptation Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Suppose the government decided that, since gasoline is a necessity, its price should be legally capped at $1.30 per gallon. What do you anticipate would be the outcome in the gasoline market?</p>
+						<p>
+							<img src="./assets/samples/images_for_adaptation_track/validation_Economics_2.png" alt="Gasoline Market Question" style="max-width: 100%; height: auto; display: block; margin: 10px auto;" />
+						</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>A price below that of $1.30 would cause a situation of excess demand and hence a surplus.</li>
+							<li>A price below that of $1.30 would cause a situation of excess demand and hence a shortage.</li>
+							<li>Not certain.</li>
+							<li>A price above that of $1.30 would cause a situation of excess demand and hence a shortage.</li>
+							<li>A price above that of $1.30 would cause a situation of excess supply and hence a shortage.</li>
+							<li>A price at $1.30 per gallon would result in an equilibrium where supply meets demand.</li>
+							<li>A price below that of $1.30 would cause a situation of excess supply and hence a surplus.</li>
+							<li>A price at $1.30 would eliminate any market shortages or surpluses.</li>
+							<li>A price of $1.30 would result in both excess demand and excess supply, depending on consumer preferences.</li>
+							<li>All situations are possible.</li>
+						</ol>
+						<p><strong>Ground truth: </strong>B. A price below that of $1.30 would cause a situation of excess demand and hence a shortage.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <hr class="mt-5"> -->
+	
+	<section id="Humanities">
+		<hr class="mt-5">
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">Video-MMMU Examples - Humanities</h2>
+			<!-- YouTube Video -->
+			<div class="youtube-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/1PnAVfnCG10?si=XDlObPB1DR54DQt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+	
+			<!-- Question Tracks -->
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Perception Track -->
+				<div class="track">
+					<div class="track-title perception">Perception Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Based on the video, fill in the blanks about the Functionalist view of society’s culture:</p>
+						<p>"Functionalists take a ________ view on society’s culture and suggest it ________."</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Consensus, reflects the norms and values of the majority — a value consensus</li>
+							<li>Unified, represents shared practices and beliefs of a group</li>
+							<li>Conflict, reveals power struggles and competing interests within society</li>
+							<li>Critical, critiques the dominant traditions that maintain inequalities</li>
+							<li>Conservative, emphasizes the preservation of societal expectations</li>
+							<li>Agreement, highlights the shared opinions and moral agreements</li>
+							<li>Progressive, encourages the development of new cultural ideologies</li>
+							<li>Stratified, reflects the rules that structure society into classes</li>
+							<li>Divisive, showcases the competing customs and traditions in society</li>
+							<li>Analytical, breaks down societal structures into individual roles</li>
+						</ol>
+						<p><strong>Ground truth: </strong>A. Consensus, reflects the norms and values of the majority — a value consensus</p>
+					</div>
+				</div>
+	
+				<!-- Comprehension Track -->
+				<div class="track">
+					<div class="track-title comprehension">Comprehension Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Based on your understanding, which of the following statements about different sociological theories on culture is/are false?</p>
+						<p><strong>Statements:</strong></p>
+						<ul>
+							<li>Statement 1. Functionalists argue that society’s culture is fragmented, and individuals create their own norms based on personal preferences and life experiences.</li>
+							<li>Statement 2. Marxists suggest that culture is imposed by the ruling class (bourgeoisie) to maintain control over the working class and reinforce capitalist ideologies.</li>
+							<li>Statement 3. Feminists believe that culture is male-dominated and reflects patriarchal values, prioritizing men’s interests over women’s.</li>
+							<li>Statement 4. Postmodernists suggest that there is a single dominant culture, and individuals can choose their own cultural norms.</li>
+						</ul>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Statement 1 is false</li>
+							<li>Statement 2 is false</li>
+							<li>Statement 3 is false</li>
+							<li>Statement 4 is false</li>
+							<li>Statements 1 and 2 are false</li>
+							<li>Statements 3 and 4 are false</li>
+							<li>Statements 1 and 4 are false</li>
+							<li>Statements 1 and 3 are false</li>
+							<li>Statements 2 and 4 are false</li>
+							<li>None of the statements are false</li>
+						</ol>
+						<p><strong>Ground truth: </strong>G. Statements 1 and 4 are false</p>
+					</div>
+				</div>
+	
+				<!-- Adaptation Track -->
+				<div class="track">
+					<div class="track-title adaptation">Adaptation Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Identify the theory that the following argument represents.</p>
+						<p>
+							<img src="./assets/samples/images_for_adaptation_track/sociology_4.png" alt="Gasoline Market Question" style="max-width: 100%; height: auto; display: block; margin: 10px auto;" />
+						</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Functionalism</li>
+							<li>Marxism</li>
+							<li>New Right</li>
+							<li>Postmodernism</li>
+							<li>Social action approaches</li>
+							<li>Interactionism</li>
+							<li>Feminism</li>
+							<li>Conflict Theory</li>
+							<li>Modernity</li>
+							<li>Positivists</li>
+						</ol>
+						<p><strong>Ground truth: </strong>Functionalism</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <hr class="mt-5"> -->
+	
+	<section id="Science">
+		<hr class="mt-5">
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">Video-MMMU Examples - Science</h2>
+			<!-- YouTube Video -->
+			<div class="youtube-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/TQSvfrSJucI?si=xNUh5Ny5annIfdId" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+	
+			<!-- Question Tracks -->
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Perception Track -->
+				<div class="track">
+					<div class="track-title perception">Perception Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> What is the equation used when solving the first question in the video?</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>y = v<sub>0y</sub> t + 1/2 g t<sup>2</sup></li>
+							<li>y = y<sub>0</sub> + v<sub>0x</sub> t - 1/2 g t<sup>2</sup></li>
+							<li>y = v<sub>0x</sub> t + g t<sup>2</sup></li>
+							<li>y = y<sub>0</sub> + v<sub>0y</sub> t - 1/2 g t<sup>2</sup></li>
+							<li>y = v<sub>0y</sub> t - g t</li>
+							<li>y = y<sub>0</sub> + v<sub>0x</sub> t + 1/2 g t<sup>2</sup></li>
+							<li>y = y<sub>0</sub> + g t</li>
+							<li>y = y<sub>0</sub> + v<sub>0y</sub> t + g t<sup>2</sup></li>
+							<li>y = v<sub>0x</sub> t + 1/2 g t<sup>2</sup></li>
+							<li>y = y<sub>0</sub> + 1/2 g t<sup>2</sup></li>
+						</ol>
+						<p><strong>Ground truth: </strong>D. y = y<sub>0</sub> + v<sub>0y</sub> t - 1/2 g t<sup>2</sup></p>
+					</div>
+				</div>
+	
+				<!-- Comprehension Track -->
+				<div class="track">
+					<div class="track-title comprehension">Comprehension Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> If the angle theta is changed to 30 degrees, what is the result of the first question about the total time in the air?</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>4.00 seconds</li>
+							<li>2.82 seconds</li>
+							<li>3.50 seconds</li>
+							<li>2.50 seconds</li>
+							<li>3.04 seconds</li>
+							<li>2.00 seconds</li>
+							<li>3.15 seconds</li>
+							<li>1.85 seconds</li>
+							<li>2.25 seconds</li>
+							<li>3.85 seconds</li>
+						</ol>
+						<p><strong>Ground truth: </strong>E. 3.04 seconds</p>
+					</div>
+				</div>
+	
+				<!-- Adaptation Track -->
+				<div class="track">
+					<div class="track-title adaptation">Adaptation Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> A rocket is shot from the top of a tower at an angle of 45° above the horizontal (Fig. 19-1). It hits the ground in 5 seconds at a horizontal distance from the foot of the tower equal to three times the height of the tower. Find the height of the tower.</p>
+						<p>
+							<img src="./assets/samples/images_for_adaptation_track/science_math_23.png" alt="Rocket Adaptation Question" style="max-width: 100%; height: auto; display: block; margin: 10px auto;" />
+						</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>h = 100 ft</li>
+							<li>h = 80 ft</li>
+							<li>h = 110 ft</li>
+							<li>h = 85 ft</li>
+							<li>h = 90 ft</li>
+							<li>h = 95 ft</li>
+							<li>h = 105 ft</li>
+							<li>h = 120 ft</li>
+							<li>h = 75 ft</li>
+							<li>h = 115 ft</li>
+						</ol>
+						<p><strong>Ground truth: </strong>A. h = 100 ft</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <hr class="mt-5"> -->
+	
+	<section id="Medicine">
+		<hr class="mt-5">
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">Video-MMMU Examples - Medicine</h2>
+			<!-- YouTube Video -->
+			<div class="youtube-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/FI3-28tdovk?si=ckgiWJUK0speh1Ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+	
+			<!-- Question Tracks -->
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Perception Track -->
+				<div class="track">
+					<div class="track-title perception">Perception Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> At the beginning of the video, what are the muscles in the lower left corner, upper left corner, and lower right corner, respectively?</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Cardiac muscle, Smooth muscle, Skeletal muscle</li>
+							<li>Skeletal muscle, Cardiac muscle, Smooth muscle</li>
+							<li>Skeletal muscle, Smooth muscle, Cardiac muscle</li>
+							<li>Smooth muscle, Cardiac muscle, Skeletal muscle</li>
+							<li>Smooth muscle, Skeletal muscle, Cardiac muscle</li>
+							<li>Smooth muscle, Cardiac muscle, Cardiac muscle</li>
+							<li>Skeletal muscle, Skeletal muscle, Smooth muscle</li>
+							<li>Cardiac muscle, Smooth muscle, Smooth muscle</li>
+							<li>Skeletal muscle, Smooth muscle, Smooth muscle</li>
+							<li>Cardiac muscle, Skeletal muscle, Smooth muscle</li>
+						</ol>
+						<p><strong>Ground truth: </strong>J. Cardiac muscle, Skeletal muscle, Smooth muscle</p>
+					</div>
+				</div>
+	
+				<!-- Comprehension Track -->
+				<div class="track">
+					<div class="track-title comprehension">Comprehension Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Based on the video, how many of the following characteristics can be used to identify the different types of muscle tissue?</p>
+						<p>Characteristics:</p>
+						<ul>
+							<li>(c1). Presence of striations</li>
+							<li>(c2). Presence of intercalated discs</li>
+							<li>(c3). Voluntary control</li>
+							<li>(c4). Involuntary control</li>
+							<li>(c5). Branching appearance</li>
+							<li>(c6). Smooth, spindle-shaped cells</li>
+							<li>(c7). Long, cylindrical fibers</li>
+							<li>(c8). Multinucleated cells</li>
+							<li>(c9). Location</li>
+						</ul>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>0</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+						</ol>
+						<p><strong>Ground truth: </strong>H. 7</p>
+					</div>
+				</div>
+	
+				<!-- Adaptation Track -->
+				<div class="track">
+					<div class="track-title adaptation">Adaptation Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> What kind of tissue does this image depict?</p>
+						<p>
+							<img src="./assets/samples/images_for_adaptation_track/medicine_11.jpg" alt="Muscle Tissue Question" style="max-width: 100%; height: auto; display: block; margin: 10px auto;" />
+						</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Cardiac muscle</li>
+							<li>Skeletal muscle</li>
+							<li>Cartilage</li>
+							<li>Smooth muscle</li>
+							<li>Tendon</li>
+							<li>Ligament</li>
+							<li>Adipose tissue</li>
+							<li>Epithelium</li>
+							<li>Connective tissue</li>
+							<li>Nerve tissue</li>
+						</ol>
+						<p><strong>Ground truth: </strong>A. Cardiac muscle</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <hr class="mt-5"> -->
+	
+	<section id="Engineering">
+		<hr class="mt-5">
+		<div class="container text-center" style="margin-top: 30px">
+			<!-- Section Title -->
+			<h2 class="section-title">Video-MMMU Examples - Engineering</h2>
+			<!-- YouTube Video -->
+			<div class="youtube-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/LnF-dYhi8JE?si=B5X6V7WeJOn0Dv6y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+	
+			<!-- Question Tracks -->
+			<div class="tracks-row flex" style="margin-top: 20px;">
+				<!-- Perception Track -->
+				<div class="track">
+					<div class="track-title perception">Perception Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Identify the correct sequence of steps to construct the minimum spanning tree using Kruskal's algorithm from the graph described in the video.</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>Add CF, add AC, add EF, add BC, add FG.</li>
+							<li>Add BE, add EF, add CF, add BC, add FG.</li>
+							<li>Add BE, add EF, add FG, add BC, add CD.</li>
+							<li>Add BE, add AC, add EF, add FC, add CD.</li>
+							<li>Add BE, add BC, add AC, add EF, add FG.</li>
+							<li>Add BE, add AC, add DF, add BC, add CD.</li>
+							<li>Add BE, add AC, add EF, add BC, add FG.</li>
+							<li>Add BE, add AC, add DF, add FG, add BC.</li>
+							<li>Add BE, add EF, add BC, add FG, add CD.</li>
+							<li>Add BE, add AC, add FG, add EF, add BC.</li>
+						</ol>
+						<p><strong>Ground truth: </strong>G. Add BE, add AC, add EF, add BC, add FG.</p>
+					</div>
+				</div>
+	
+				<!-- Comprehension Track -->
+				<div class="track">
+					<div class="track-title comprehension">Comprehension Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Based on the graph example in the video, if you apply Kruskal's algorithm and the weight of the first few edges changes slightly, which would be the resulting edge sequence if the edge BE now has a weight of 1 and EF a weight of 0.5?</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>EF, AC, BE, BC, FG</li>
+							<li>BE, EF, AC, FG, BC</li>
+							<li>BE, AC, BC, EF, FG</li>
+							<li>AC, BE, EF, BC, FG</li>
+							<li>EF, BE, FG, AC, BC</li>
+							<li>EF, BE, AC, BC, FG</li>
+							<li>BE, EF, FG, BC, AC</li>
+							<li>EF, AC, BC, BE, FG</li>
+							<li>BE, AC, FG, EF, BC</li>
+							<li>AC, FG, BE, EF, BC</li>
+						</ol>
+						<p><strong>Ground truth: </strong>F. EF, BE, AC, BC, FG</p>
+					</div>
+				</div>
+	
+				<!-- Adaptation Track -->
+				<div class="track">
+					<div class="track-title adaptation">Adaptation Track</div>
+					<div class="track-content">
+						<p><strong>Question:</strong> Consider the following graph: Which one of the following can be a valid sequence of edges added, in that order, to a minimum spanning tree using Kruskal's algorithm?</p>
+						<p>
+							<img src="./assets/samples/images_for_adaptation_track/validation_Computer_Science_19.png" alt="Kruskal's Algorithm Adaptation Question" style="max-width: 100%; height: auto; display: block; margin: 10px auto;" />
+						</p>
+						<p><strong>Options:</strong></p>
+						<ol type="A">
+							<li>(a-b), (b-f), (d-f), (d-c), (d-e)</li>
+							<li>(a-b), (d-c), (d-f), (b-f), (d-e)</li>
+							<li>(d-f), (d-e), (a-b), (d-c), (b-f)</li>
+							<li>(d-f), (a-b), (b-f), (d-c), (d-e)</li>
+							<li>(a-c), (b-f), (d-f), (d-c), (d-e)</li>
+							<li>(d-f), (d-c), (a-b), (b-f), (d-e)</li>
+							<li>(a-c), (d-f), (b-f), (d-e), (d-c)</li>
+							<li>(d-c), (d-f), (a-b), (b-f), (d-e)</li>
+							<li>(d-f), (b-f), (a-b), (d-c), (d-e)</li>
+							<li>(a-c), (d-c), (d-f), (b-f), (d-e)</li>
+						</ol>
+						<p><strong>Ground truth: </strong>D. (d-f), (a-b), (b-f), (d-c), (d-e)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr class="mt-5">
+	
+
+	<hr class="mt-5">
+
+</body>
+</html>

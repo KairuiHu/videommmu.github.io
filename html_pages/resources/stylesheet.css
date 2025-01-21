@@ -1,0 +1,427 @@
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.flex {
+ display: flex;
+}
+
+.col-seven {
+   width:14.285%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+}
+
+h1 {
+ /* Extra small devices (phones, less than 768px) */
+ font-size: 2rem;
+}
+
+.paper-btn {
+ position: relative;
+ text-align: center;
+
+ display: inline-block;
+ margin: 8px;
+ padding: 8px 8px;
+
+ border-width: 0;
+ outline: none;
+ border-radius: 10px;
+
+ background-color: #3e3e40;
+ color: white !important;
+ font-size: 16px;
+ width: 180px;
+ font-weight: 350;
+}
+.paper-btn-parent {
+   display: flex;
+   justify-content: center;
+   margin: 16px 0px;
+}
+.paper-btn:hover {
+   opacity: 0.80;
+}
+
+.video-teaser-container {
+ position: relative;
+ width: 25%;
+ margin: 0%;
+ overflow: hidden;
+ cursor: pointer;
+}
+
+.video-teaser {
+ width: 100%;
+ height: auto;
+ filter: brightness(0.7);
+ transition: filter 0.3s ease-in-out;
+}
+
+.video {
+ width: 100%;
+ height: auto;
+}
+
+.hover-overlay {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 80%;
+ height: auto;
+ opacity: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-family: Chalkduster;
+ font-size: 16px;
+ text-align: center;
+ transition: opacity 0.3s ease-in-out;
+}
+
+.video-teaser-container:hover .video-teaser {
+ filter: brightness(1); /* Brighten the video on hover */
+}
+
+.video-teaser-container:hover .hover-overlay {
+ opacity: 0;
+}
+
+.download-table {
+ border-collapse: collapse;
+ width: auto; /* Adjust the width as needed */
+}
+
+.download-table th, .custom-table td {
+ border: 1px solid black;
+ padding: 8px;
+ text-align: center;
+}
+
+.footnote {
+ color: #79797d;
+ font-size: 12px;
+ font-weight: 200;
+}
+
+header {
+ background-color: #000;
+ color: #fff !important;
+ padding: 5px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ z-index: 1000;
+}
+
+header h5 {
+ margin: 0;
+}
+
+nav {
+ display: flex;
+}
+
+nav a {
+ color: #fff !important;
+ text-decoration: none;
+ margin-left: 20px;
+ margin-right: 15px;
+}
+
+section {
+ padding: 50px;
+}
+
+div.scroll-container {
+ background-color: #3e3e40;
+ overflow: auto;
+ white-space: nowrap;
+ margin-top: 25px;
+ margin-bottom: 25px;
+ padding: 7px 7.5px 2.5px 9px;
+}
+
+.image-container {
+ text-align: center;
+}
+
+.image-item {
+ opacity: 0;
+ width: 100%;
+ margin: 0px;
+ transition: opacity 0.5s ease-in-out;
+}
+
+.image-item img {
+ width: 100%;
+ height: auto;
+}
+
+.table-container {
+ width: 80%;
+ table-layout: fixed;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+@media (max-width: 1000px) {
+ .table-container {
+   width: 100%;
+ }
+}
+
+.youtube-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  text-align: center;
+  color: #ffffff; /* Bright white color for the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a subtle shadow for better visibility */
+}
+
+.text-container .title {
+  font-size: 28px; /* Larger font size for the title */
+  font-weight: bold; /* Bold for emphasis */
+  display: block;
+  margin-bottom: 5px; /* Add space between title and subtitle */
+}
+
+.text-container .subtitle {
+  font-size: 16px; /* Slightly smaller font for subtitle */
+  font-weight: normal;
+  display: block;
+}
+
+.tracks-row {
+  display: flex;
+  justify-content: space-between; /* Space out tracks evenly */
+  gap: 20px; /* Add space between each track */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding: 10px;
+}
+
+.track {
+  flex: 1; /* Ensure tracks take equal space */
+  min-width: 30%; /* Ensure each track has enough width */
+  max-height: 400px; /* Limit height of each track */
+  overflow-y: auto; /* Make each track scrollable vertically */
+  padding: 0; /* Remove padding from the overall track */
+  border-radius: 10px; /* Smooth rounded corners */
+  background: #d6d6d6; /* Gray background for content area */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow for depth */
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Left-align content inside the block */
+}
+
+.track-title {
+  text-align: center; /* Center-align the text */
+  color: #000000; /* Default white font color for contrast */
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 10px 0; /* Add vertical padding */
+  border-top-left-radius: 10px; /* Rounded corners for the top block */
+  border-top-right-radius: 10px;
+}
+
+/* Specific colors for each track title */
+.track-title.perception {
+  background-color: #d2b48c; /* Light brown for Perception Track */
+}
+
+.track-title.comprehension {
+  background-color: #f4e4d8; /* Light beige for Comprehension Track */
+}
+
+.track-title.adaptation {
+  background-color: #fff5cc; /* Pale yellow for Adaptation Track */
+}
+
+
+.track-content {
+  padding: 15px; /* Add padding to the content area */
+  color: #444; /* Darker gray font color for readability */
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+  flex: 1; /* Allow content area to take up remaining space */
+}
+
+.track-content p,
+.track-content ol,
+.track-content ul {
+  font-size: 14px;
+  line-height: 1.5; /* Improve readability */
+  margin: 10px 0;
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.track-content ol,
+.track-content ul {
+  margin-left: -20px; /* Indent lists for better readability */
+}
+
+.track-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc; /* Slight border for better visibility on light gray */
+  border-radius: 5px; /* Optional rounded corners for images */
+}
+
+/* Hover Effect */
+.track:hover {
+  background: #bfbfbf; /* Darker gray on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.track-title:hover {
+  background: #357ABD; /* Slightly darker blue on hover for the title */
+  transition: background 0.3s ease;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Optional: Makes the title all uppercase */
+  letter-spacing: 1px; /* Optional: Adds spacing between letters */
+}
+
+.legend {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.human {
+  background-color: #fff4d4; /* Lighter background for Human Expert */
+}
+
+.opensource {
+  background-color: #d8ebf6; /* Lighter background for Open-Source */
+}
+
+.proprietary {
+  background-color: #ffe4e1; /* Lighter background for Proprietary */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  text-align: left;
+  border: 1px solid #ddd;
+  table-layout: fixed; /* Ensures equal column widths */
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  color: black; /* Set text color to black */
+  word-wrap: break-word; /* Ensures content doesn't overflow */
+}
+
+
+th {
+  background-color: #f4f4f4;
+}
+
+tbody tr {
+  background-color: inherit;
+}
+
+tbody tr:hover td {
+  background-color: white; /* Cells turn white on hover */
+}
+
+.opensource-row {
+  background-color: #d8ebf6;
+}
+
+.human-row {
+  background-color: #fff4d4;
+}
+
+.proprietary-row {
+  background-color: #ffe4e1;
+}
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Menu Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%; /* Aligns below the "Sample Demo" button */
+  background-color: #444;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
